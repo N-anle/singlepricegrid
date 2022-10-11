@@ -1,0 +1,177 @@
+:root{
+    --pri-cyan: hsl(179, 62%, 43%);
+    --pri-bright-yellow: hsl(71, 73%, 54%);
+    --lighter-cyan:hsl(169, 62%, 43%);
+
+    --neu-light-gray: hsl(204, 43%, 93%);
+    --neu-grayish-blue: hsl(218, 22%, 67%);
+
+    --fs: 1rem;
+
+    --ff: 'Karla', sans-serif;
+
+    --fw400:400;
+    --fw700:700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff);
+    display: flex;
+    justify-content: center;
+    background-color:var(--neu-light-gray);
+}
+/* trying mobile first design */
+.container{
+    width: 60%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10%;
+}
+
+.top{
+    background-color:white;
+    height: 33%;
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+.bottom{
+    height: 67%;
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+.left,.right{
+    height: 50%;
+    border: 1px solid transparent;
+}
+
+.content{
+    padding: 10px;
+}
+
+.join{
+    color: var(--pri-cyan);
+    font-weight: var(--fw700);
+}
+
+.hassle{
+    padding-top: 10px;
+    color: var(--pri-bright-yellow);
+}
+
+.topmain{
+    padding-top: 10px;
+    color:var(--neu-grayish-blue) ;
+}
+
+.left{
+    background-color: var(--pri-cyan);
+}
+
+.sub{
+    color: white;
+    font-weight: var(--fw400);
+}
+
+.pricing{
+    padding-top: 10px;
+    color:var(--neu-light-gray);
+}
+
+span{
+    font-size: 1.5rem;
+    font-weight: var(--fw700);
+}
+
+.access{
+    padding-top: 10px;
+    color: var(--neu-light-gray);
+}
+
+button{
+    margin-top: 30px;
+}
+
+#btn{
+    width: 100%;
+    height: 35px;
+    color: var(--neu-light-gray);
+    background-color: var(--pri-bright-yellow);
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-weight: var(--fw700);
+}
+
+.right{
+    background-color: var(--lighter-cyan);
+    color: var(--neu-light-gray);
+}
+
+.why{
+    font-weight: var(--fw700);
+}
+
+.tut{
+    padding-top: 10px;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:375px){
+    body{
+    font-size: 0.9000rem;
+}
+}
+
+@media screen and (min-width:800px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        display: flex;
+        position: relative;
+    }
+
+    .container{
+        width: 40%;
+        height: 400px;
+        border: 1px solid transparent;
+        margin-top: 10%;
+    }
+
+    .top,.bottom{
+        height: 50%;
+        width: 100%;
+    }
+
+    .top{
+        height: 45%;
+    }    
+
+    .bottom{
+        height: 55%;
+    }
+    .bottom{
+        display: flex;
+        flex: 1;
+    }
+
+    .left,.right{
+        width: 50%;
+        height: 100%;
+    }
+}
